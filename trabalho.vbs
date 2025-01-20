@@ -1,4 +1,6 @@
 Set objFSO = CreateObject("Scripting.FileSystemObject")
-Set objFile = objFSO.CreateTextFile("output.txt", True)
-objFile.WriteLine("Hello, World!")
+Set objFile = objFSO.CreateTextFile("output.bat", True)
+objFile.WriteLine("@echo off")
+objFile.WriteLine("echo hello oi")
+objFile.WriteLine("pause")
 objFile.Close
